@@ -3,7 +3,7 @@ $filename = "myfile.txt";
 
 // Write to file
 $file = fopen($filename, "w");
-fwrite($file, "sumit! This is written by admin sumit yadav.");
+fwrite($file, "Priyanshu! This is written by admin Priyanshu .");
 fclose($file);
 echo "Data written successfully!<br>";
 
