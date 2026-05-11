@@ -2,7 +2,7 @@
 session_start();
 
 // Store session
-$_SESSION['username'] = "Sumit";
+$_SESSION['username'] = "Priyanshu kr";
 $_SESSION['age'] = 21;
 
 // Retrieve session
