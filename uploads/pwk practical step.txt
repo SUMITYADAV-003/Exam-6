@@ -1,0 +1,145 @@
+go to kali and login
+
+practical 1. How to Check Open Ports for a Target IP
+  1. go to terminal
+  2. ping 192.168.80.129(metasploitalet ip)
+  3. type "nmap -p- 192.168.80.129 -v"
+
+practical 2.How to check the operating system and service versions of the target IP?
+  1. go to kali Linux terminal
+  2. type command "whoami"
+  3. type "nmap -sV 192.168.80.129 
+  4. namp -o 192.168.80.129
+  5. namp -A -v 192.168.80.129 to see agressibily
+
+
+practice 3.How to gather information using the tool the Harvester?
+  1.go to kali Linux terminal
+  2.check harvester type "the harverster --version"
+  3. if not install then install harverster 
+# Step 1 — Update your system first
+sudo apt update
+
+# Step 2 — Install directly
+sudo apt install theharvester -y
+
+# Step 3 — Verify installation
+theHarvester --version
+
+  4.type "theHarvester -d sumityadav-003yadav.netlify.app -b google -l 100"
+  5. type "theHarvester -d sumityadav-003yadav.netlify.app -b all -l 200"
+
+
+
+practical 4.How to find  information about domain name, such as registration’s, contact and more?
+   1.open firefox 
+   2. paste url"https://www.whois.com/whois/"
+   3. type domain name or ip address
+
+
+
+practical 5.Which tool is used to perform zone transfers?
+   1. go to kali Linux
+   2. type "sudo su" to login root" then enter
+   3. type "dnswalk geeksforgeek.org."
+
+# Correct basic command
+dnswalk geeksforgeek.org.
+
+# With full details
+dnswalk -r geeksforgeek.org.
+
+# Practice domain (zone transfer)
+dnswalk zonetransfer.me.
+
+# Your domain
+dnswalk google.com.
+
+
+
+practical 6.How to check the live hosts and their IP addresses on a local network?
+  1. go to kali Linux terminal'
+  2. type "nmap -n 192.168.114.0 -v"
+
+   # Scan entire network for live hosts
+nmap -sn 192.168.80.0/24
+
+# What each part means:
+# -sn    = ping scan only (no port scan)
+# /24    = scan all 256 IPs in network
+ 
+type 'nmap -sn 192.168.80.0/24 | grep "Nmap scan"'
+
+
+
+
+practical 7.How to perform Stored Cross-Site Scripting(XSS)?
+  1. go to kali Linux
+  2. open firfox
+3. go to setting
+4. go to networking setting
+5. no proxy
+ 6. open another tab type ip of metap
+ 7. go to xss store
+ 8. type name(any nam) meassage (anthing)
+ 9. click on sign guest book
+ 10. copy script "<script>alert('abcd');</script>"
+ 11. paste in message
+
+
+
+practical 8.How to perform SQL Injection?
+   1. go to mataspolite
+   2. sql injection
+   3. type "'1"
+    4. submit
+
+
+pracrtical 9.How to perform Reflected Cross-Site Scripting(XSS)?
+  1. go to bee-box
+  2. go to terminal
+  3. type "ifconfig"
+  4. remember ip address
+  5. go to kali linux
+  6. open firefox in kali Linux
+  7. open two tabs
+  8. type your ip address (bee-box) in url and enter
+  9. click bwapp
+  10. choose your bugs "cross site scripting reflecting GET METHOD"
+  11. click on hack 
+  12. pop-up appear give username "sumityadav"then go when it dispear
+  13. type in first name "<script>alert('XSS')</script>"
+  14. type in last name "sumityadav" pop appear practical done
+
+practical 12.How to Intercept HTTP traffic with Burp Proxy?
+1. open burpsuit
+2. open firefox
+3. settings ,network settings,manual
+http proxy
+4. go to burpsuit again 
+5. go to burp ,setting ,copy the interface and type in netwok setting (manual)
+6. ok
+7. proxy,on intercept
+8. firefox,open http sites (http://www.http2demo.io/,  http://info.cern.ch/,  testfire.net)
+9. enter
+
+
+practical 14. How to check web server vulnerability?
+1. in terminal type "sudo zaproxy"
+2. choose 3 no i do not want to .......in time
+start , maximize
+3. choose automated scan
+4. in url to attack: http://testfire.net/
+5. attack
+6. output
+7. alert (vulnerability)
+
+practical 15. How to perform Banner Grabbing?
+type "nmap --script banner 192.168.114.193 -v" (metas..ip)
+
+practical 13.How to crack password using hashcat or John the ripper?
+
+ 1. open terminal in kali
+ 2. type "cd desktop" enter
+ 3. type "zip2john amit.zip > a.txt"
+ 4. type "john --format=zip a.txt"
